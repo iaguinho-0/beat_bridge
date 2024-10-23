@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    *{
+        box-sizing: border-box;
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Open Sans', 'sanser if';
+    }
+
+    body{
+        font-family: "Open Sans", sans-serif;
+        background-image: linear-gradient(to bottom, rgba(92, 49, 197, 1), rgba(26, 12, 42, 1));
+        height: 100%;
+    }
+
+    a{
+        text-decoration: none !important;
+    }
+
+   h1{
+    font-weight: 800;
+    font-size: 60px;
+    color: aliceblue; 
+    }
+
+    p{
+        font-weight: 200;
+        font-size: 25px;
+        color: aliceblue;
+    }
+
+    h1{
+        font-weight: 800;
+        font-size: 60px;
+    }
+
+    /* Nav */
+    .navB-content {
+        display: flex;
+        background-color: #1A0C2A;
+        justify-content: center;
+    }
+
+    .nav__bar{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        height: 5em;
+    }
+
+    .text-nav {
+        display: flex;
+        color: aliceblue;
+        text-decoration: none;
+        justify-content: center;
+        font-weight: 400;
+        transition: .5s;
+    }
+
+    .text-nav:hover{
+        color: #6827FE;
+    }
+
+    .text-nav2{
+        display: inline-block;
+        
+        font-weight: 400;
+        transition: .5s;
+    }
+
+    .text-nav img{
+
+    }
+
+    /* Menu DropDown */
+    .sub-menu-wrap{
+        position: absolute;
+        top: 9%;
+        right: 30vw;
+        width: 320px;
+        max-height: 0px; /*menu fechado*/
+        overflow: hidden;
+        transition: max-height 0.7s;
+    }
+    /* Gambiarra pra responsividadeKKKK */
+    @media (max-width: 1260px) {
+        .sub-menu-wrap{
+            right: 26vw;
+        }
+    }
+
+
+    /*Abrir o menu*/
+    .sub-menu-wrap.open-menu{
+        max-height: 400px; /*menu aberto*/
+    }
+
+    .sub-menu{
+        border-radius: 12px;
+        background: #1a0c2ace;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .user-info{
+        display: flex;
+        align-items: center;
+    }
+
+    .user-info h2{
+        font-size: 1.2em;
+        color: #fff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        margin-bottom: 0 !important;
+    }
+    /* DESISTO, NÃO CONSIGO CONSERTAR A COR DO TEXTO "ENTRAR", no menu drop-down.
+    .user-info h2 a.entrar{
+        text-decoration: none !important;
+        font-size: 2em !important;
+        color: #fff !important;
+        font-family: "Poppins", sans-serif !important;
+        font-weight: 600 !important;
+        margin-bottom: 0px !important;
+    }*/
+
+    .user-info img{
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    .sub-menu hr{
+        border: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #ccc;
+        margin: 15px 0 10px;
+    }
+
+    .sub-menu-link{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        display: flex !important;
+        align-items: center !important;
+        text-decoration: none;
+        color: #fff !important;
+        margin: 12px 0;
+    }
+
+    .sub-menu-link p{
+        display: flex !important;
+        align-items: center !important;
+        font-size: 0.9em;
+        margin-bottom: 0 !important;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #fff !important;
+        width: 100%;
+        transition: .5s;
+    }
+
+    .sub-menu-link img{
+        width: 40px;
+        background: #e5e5e5;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 15px;
+    }
+
+    .sub-menu-link span{
+        font-size: 20px;
+        transition: transform 0.5s;
+    }
+
+    .sub-menu-link:hover span{
+        transform: translate(5px);
+    }
+
+    .sub-menu-link:hover p{
+        font-weight: 600;
+    }
+    /* FIM - Menu DropDown */
+    
+    /* Nav */
+
+    /* box-home */
+
+    .main-text{
+        font-weight: 800;
+        font-size: 60px;
+        margin: -15px auto;
+        color: white;
+    }
+
+    .box-1{
+        margin:  60px 20%;
+        padding-top: 2rem;
+    }
+
+    .box-1 > h1{
+        font-weight: 800;
+        font-size: 50px;
+        margin: -15px auto;
+        color: white;
+    }
+
+    .box-1 > p{        
+        margin: 35px 0px;
+        font-weight: 300;
+        font-size: 25px;
+        color: white;
+    }
+
+    .box-1 > img{
+        width: 50vw;
+        max-width: 265px;
+    }
+
+    .botao1{
+        display: flex;
+        margin: 40px auto;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border-radius: 8px;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .botao1:hover{
+        border: 3px solid rgba(26, 12, 42, 1);
+        background-color: rgba(26, 12, 42, 1);
+    }
+
+    .box-2{ 
+        width: 50%;
+        margin: 0 15%;
+
+    }
+
+    .box-2>img{
+        max-width: 270px;
+        min-width: 150px;
+        width: 15vw;
+        transition: .4s;
+        cursor: pointer;
+    }
+
+    .box-2:hover > :not(:hover){
+        opacity: .4;
+        transform: scale(0.9);
+    }
+        /* box-home */
+
+
+    /* O QUE FAZ O PLAYLIST? */
+
+    .experience_section .row {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .detail-box{
+        margin: 0 10%;
+    }
+    
+    .experience_section .detail-box p {
+        margin-top: 20px;
+    }
+
+    .experience_section .detail-box .btn-box a {
+        text-align: center;
+        width: 165px;
+        font-size: 15px;
+        margin: 5px;
+    }
+    
+    .experience_section .img-box img {
+        width: 80%;
+    }
+
+    .layout_padding {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    /* O QUE FAZ O PLAYLIST? */
+
+
+    /* AVALIAÇÃO */
+
+    div.box-3{
+        display: flex;
+        margin: 0 10px 0 auto;
+        flex-direction: row !important;
+    }
+    div.box-3 > p.avaliacao{
+        background-color: rgba(26, 12, 42, 1);
+        border-radius: 9px;
+        padding: 3rem 1rem;
+        text-align: center;
+        width: 30vw;
+        height: 32vh;
+        box-shadow: 1px 8px 20px black;
+    }
+
+    div.box-4{
+        display: flex;
+        margin: 0 auto 0 10px;
+        flex-direction: row !important;
+    }
+
+    div.box-4 > p.avaliacao{
+        background-color: rgba(26, 12, 42, 1);
+        border-radius: 9px;
+        padding: 3rem 1rem;
+        text-align: center;
+        width: 30vw;
+        height: 32vh;
+        box-shadow: 1px 8px 20px black;
+    }
+
+    .avaliacao{
+        margin-bottom: 0 !important;
+        border-radius: 9px !important;
+    }
+
+
+    .avaliacao_box{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .full-box{
+        margin-bottom: 10rem;
+    }
+
+    /* O JEITO MAIS FÁCIL DE TRANSFERIRPLAYLISTS */
+
+    .botao2{
+        display: flex;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border-radius: 8px;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .botao2:hover{
+        border: 3px solid rgba(26, 12, 42, 1);
+        background-color: rgba(26, 12, 42, 1);
+    }
+      
+    .block{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18rem; 
+    }
+
+      .box-text {
+        border-radius: 8px;
+        width: 50vw;
+        max-width: 760px;
+        height:45px;
+        border: none;
+        padding-left: 15px;
+      }
+
+     /* O JEITO MAIS FÁCIL DE TRANSFERIRPLAYLISTS */
+
+
+    /* FOOTER */
+
+    .footer{
+        margin-bottom: 3rem;
+    }
+
+    .footer-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;;
+    }
+
+     .line{
+        display: block;
+        margin-top: 0.5em;
+        margin-bottom: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        width: 100%;
+        color: black;
+      }
+
+    .footer-content .p1{
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .footer-content .p2{
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    /*.icons a{
+        transition: .5s;
+    }
+
+    .icons a:hover{
+       background-color: #6827FE;
+    }*/
+
+    /* FOOTER */
+
+    /* ASSINATURA */
+
+    /* BODY */
+
+    .box-1 h1{
+        margin-bottom: 5px;
+    }
+
+    .box-1 .sec-text { 
+        font-weight: 500;
+        font-size: 40px;
+        color: #fff;
+    }
+
+    .box-model{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 10em;
+    }
+
+    .box-model-text {
+        border-radius: 1rem;
+        background-color: #fff;
+        max-width: 225px;
+    }
+
+    .box-model-text h2 {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .box-model-text h3 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .box-model-text p {
+        font-size: 12px;
+        font-weight: 400;
+        color: black;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .dir{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .botao{
+        display: flex;
+        margin: 22px 0px 2px;
+        font-size: 12px;
+        font-weight: 800;
+        color: white;
+        border-radius: 2rem;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .text-sp{
+       margin-bottom: 12px;
+    }
+    
+    /* ASSINATURA */
+    
+    /* PAGAMENTO */
+
+    .body-pag{
+        margin-right: 10%;
+    }
+
+    .content-pag{
+        display: flex;
+        background-color: #ffffff;
+        margin: 10rem 10rem;
+        border-radius: 1em;
+    }
+
+    .org{ 
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 5rem;
+        gap: 10px;
+    }
+
+    .org h1{
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    .org h2{
+        font-size: 20px;
+        font-weight: 200;
+        color: #5F8670;
+    }
+
+    .porr{
+        display: flex;
+        flex-direction: row;
+        gap: 4em;
+    }
+
+    .mer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        border-radius: 8px;
+        margin-top: 1.5rem;
+        border: 3px solid #6827FE;
+        background-color: #6827FE;
+        padding: 3px 20px !important;
+        transition: .5s;
+    }
+
+    .botao3:hover{
+        border: 3px solid rgba(26, 12, 42, 1);
+        background-color: rgba(26, 12, 42, 1);
+    }
+
+    .dropdown{ 
+        font-weight: 400;
+        display: flex !important;
+        align-items: center !important;
+        text-decoration: none;
+        color: #fff !important;
+        margin: 12px 0;
+    }
+
+    .div-icons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-text{
+        color: #ccc;
+    }
+
+    .select-menu{
+        width: 280px;
+    }    
+
+    .select-menu .select-btn{
+        display: flex;
+        height: 60px;
+       
+        background: #ffff;
+        cursor: pointer;
+        padding: 20px;
+    }
+
+    .select-menu .options{
+        position: relative;
+        background-color: #ffff;
+        border-radius: 1rem;
+        padding: 20px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .select-menu.active .options{
+        display: block;
+    }
+
+    .options .option{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 0 16px;
+        height: 45px;
+        border-radius: 1rem;
+    }
+
+    .options .option:hover{
+        background-color: #f2f2f2;
+    }
+
+    /* PAGAMENTO */
